@@ -56,4 +56,5 @@
   <project path="prebuilts/vndk/v34" name="platform/prebuilts/vndk/v34" clone-depth="1" />
 
   <project path="build/release" name="platform/build/release"/>
+  <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" clone-depth="1" />
 </manifest>

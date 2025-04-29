@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- Remote repository configuration -->
+  <remote name="aosp" 
+          fetch="https://android.googlesource.com/"
+          review="https://android-review.googlesource.com/" />
 
-  <project name="platform/build/make" path="build/make" revision="android-14.0.0_r1" clone-depth="1"/>
-  <project name="platform/build/soong" path="build/soong" revision="android-14.0.0_r1" clone-depth="1"/>
+  <!-- Global defaults for all projects -->
+  <default revision="android15-release" 
+          remote="aosp" 
+          sync-j="4" />
 
+  <!-- Core build system components -->
+    <project name="platform/build" path="build/make">
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
 
-  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="android-14.0.0_r1" clone-depth="1"/>
+  <!-- Soong build system -->
+  <project name="platform/build/soong" path="build/soong">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
+  </project>
 
+  <!-- Bazel toolchain -->
+  <project name="platform/build/bazel" path="build/bazel" />
+  <project name="platform/build/bazel_common_rules" path="build/bazel_common_rules" />
 
-  <project name="platform/bionic" path="bionic" revision="android-14.0.0_r1" clone-depth="1"/>
+  <!-- Bionic library -->
+  <project name="platform/bionic" path="bionic" />
 
+  <!-- Clang prebuilts -->
+  <project name="platform/prebuilts/clang/host/linux-x86" 
+           path="prebuilts/clang/host/linux-x86" clone-depth="1"/>
+  
+  <project path="packages/modules/adb" name="platform/packages/modules/adb"/>
+  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" clone-depth="1"/>
+  <project path="prebuilts/bazel/common" name="platform/prebuilts/bazel/common" clone-depth="1"/>
+  <project path="system/core" name="platform/system/core"/>
+  <project path="tools/asuite" name="platform/tools/asuite"/>
+  <project path="build/blueprint" name="platform/build/blueprint"/>
+  <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" clone-depth="1"/>
+  <project path="external/golang-protobuf" name="platform/external/golang-protobuf"/>
+  <project path="external/starlark-go" name="platform/external/starlark-go"/>
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
+  <project path="packages/modules/vndk" name="platform/packages/modules/vndk"/>
+  
+  <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" clone-depth="1" />
+  <project path="prebuilts/vndk/v31" name="platform/prebuilts/vndk/v31" clone-depth="1" />
+  <project path="prebuilts/vndk/v32" name="platform/prebuilts/vndk/v32" clone-depth="1" />
+  <project path="prebuilts/vndk/v33" name="platform/prebuilts/vndk/v33" clone-depth="1" />
+  <project path="prebuilts/vndk/v34" name="platform/prebuilts/vndk/v34" clone-depth="1" />
 </manifest>

@@ -65,4 +65,6 @@
   <project path="kernel/configs" name="kernel/configs"/>
   <project path="system/sepolicy" name="platform/system/sepolicy"/>
   <project path="hardware/google/camera" name="platform/hardware/google/camera"/>
+  <project path="frameworks/base" name="platform/frameworks/base"/>
+  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt"/>
 </manifest>

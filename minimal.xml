@@ -57,4 +57,7 @@
 
 
   <project path="packages/modules/Virtualization" name="platform/packages/modules/Virtualization" groups="pdk" />
+
+
+  <project path="external/go-cmp" name="platform/external/go-cmp" groups="pdk" />
 </manifest>

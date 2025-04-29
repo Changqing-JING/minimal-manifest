@@ -56,9 +56,10 @@
   <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" clone-depth="1" />
 
 
-  <project path="packages/modules/Virtualization" name="platform/packages/modules/Virtualization" groups="pdk" />
+  <project path="packages/modules/Virtualization" name="platform/packages/modules/Virtualization"/>
 
 
-  <project path="external/go-cmp" name="platform/external/go-cmp" groups="pdk" />
-  <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces" groups="pdk,sysui-studio" />
+  <project path="external/go-cmp" name="platform/external/go-cmp"/>
+  <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces"/>
+  <project path="hardware/interfaces" name="platform/hardware/interfaces"/>
 </manifest>

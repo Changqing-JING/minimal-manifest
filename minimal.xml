@@ -59,4 +59,6 @@
 
   <project path="system/apex" name="platform/system/apex"/>
 
+  <project path="system/tools/xsdc" name="platform/system/tools/xsdc"/>
+
 </manifest>

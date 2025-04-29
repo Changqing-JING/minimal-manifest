@@ -55,6 +55,7 @@
   <project path="build/release" name="platform/build/release"/>
   <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" clone-depth="1" />
   <project path="external/go-cmp" name="platform/external/go-cmp"/>
+  <project path="system/tools/aidl" name="platform/system/tools/aidl"/>
 
   <project path="system/apex" name="platform/system/apex"/>
 

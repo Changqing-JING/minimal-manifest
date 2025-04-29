@@ -62,4 +62,5 @@
   <project path="external/go-cmp" name="platform/external/go-cmp"/>
   <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces"/>
   <project path="hardware/interfaces" name="platform/hardware/interfaces"/>
+  <project path="kernel/configs" name="kernel/configs"/>
 </manifest>

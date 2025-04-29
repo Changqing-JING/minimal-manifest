@@ -34,8 +34,7 @@
   <project name="platform/bionic" path="bionic" />
 
   <!-- Clang prebuilts -->
-  <project name="platform/prebuilts/clang/host/linux-x86" 
-           path="prebuilts/clang/host/linux-x86" clone-depth="1"/>
+  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" clone-depth="1"/>
   
   <project path="packages/modules/adb" name="platform/packages/modules/adb"/>
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" clone-depth="1"/>
@@ -48,13 +47,14 @@
   <project path="external/starlark-go" name="platform/external/starlark-go"/>
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="packages/modules/vndk" name="platform/packages/modules/vndk"/>
-  
   <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" clone-depth="1" />
   <project path="prebuilts/vndk/v31" name="platform/prebuilts/vndk/v31" clone-depth="1" />
   <project path="prebuilts/vndk/v32" name="platform/prebuilts/vndk/v32" clone-depth="1" />
   <project path="prebuilts/vndk/v33" name="platform/prebuilts/vndk/v33" clone-depth="1" />
   <project path="prebuilts/vndk/v34" name="platform/prebuilts/vndk/v34" clone-depth="1" />
-
   <project path="build/release" name="platform/build/release"/>
   <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" clone-depth="1" />
+
+
+  <project path="packages/modules/Virtualization" name="platform/packages/modules/Virtualization" groups="pdk" />
 </manifest>

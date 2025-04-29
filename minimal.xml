@@ -39,7 +39,7 @@
   <project path="packages/modules/adb" name="platform/packages/modules/adb"/>
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" clone-depth="1"/>
   <project path="prebuilts/bazel/common" name="platform/prebuilts/bazel/common" clone-depth="1"/>
-  <project path="system/core" name="platform/system/core"/>
+
   <project path="tools/asuite" name="platform/tools/asuite"/>
   <project path="build/blueprint" name="platform/build/blueprint"/>
   <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" clone-depth="1"/>
@@ -54,18 +54,8 @@
   <project path="prebuilts/vndk/v34" name="platform/prebuilts/vndk/v34" clone-depth="1" />
   <project path="build/release" name="platform/build/release"/>
   <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" clone-depth="1" />
-
-
-  <project path="packages/modules/Virtualization" name="platform/packages/modules/Virtualization"/>
-
-
   <project path="external/go-cmp" name="platform/external/go-cmp"/>
-  <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces"/>
-  <project path="hardware/interfaces" name="platform/hardware/interfaces"/>
-  <project path="kernel/configs" name="kernel/configs"/>
-  <project path="system/sepolicy" name="platform/system/sepolicy"/>
-  <project path="hardware/google/camera" name="platform/hardware/google/camera"/>
-  <project path="frameworks/base" name="platform/frameworks/base"/>
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt"/>
-  <project path="hardware/google/camera" name="platform/hardware/google/camera" groups="pdk" />
+
+  <project path="system/apex" name="platform/system/apex"/>
+
 </manifest>

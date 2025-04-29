@@ -6,7 +6,7 @@
           review="https://android-review.googlesource.com/" />
 
   <!-- Global defaults for all projects -->
-  <default revision="android15-release" 
+  <default revision="android-latest-release" 
           remote="aosp" 
           sync-j="4" />
 

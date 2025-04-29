@@ -63,4 +63,5 @@
   <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces"/>
   <project path="hardware/interfaces" name="platform/hardware/interfaces"/>
   <project path="kernel/configs" name="kernel/configs"/>
+  <project path="system/sepolicy" name="platform/system/sepolicy"/>
 </manifest>

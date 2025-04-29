@@ -64,4 +64,5 @@
   <project path="hardware/interfaces" name="platform/hardware/interfaces"/>
   <project path="kernel/configs" name="kernel/configs"/>
   <project path="system/sepolicy" name="platform/system/sepolicy"/>
+  <project path="hardware/google/camera" name="platform/hardware/google/camera"/>
 </manifest>

@@ -54,4 +54,6 @@
   <project path="prebuilts/vndk/v32" name="platform/prebuilts/vndk/v32" clone-depth="1" />
   <project path="prebuilts/vndk/v33" name="platform/prebuilts/vndk/v33" clone-depth="1" />
   <project path="prebuilts/vndk/v34" name="platform/prebuilts/vndk/v34" clone-depth="1" />
+
+  <project path="build/release" name="platform/build/release"/>
 </manifest>

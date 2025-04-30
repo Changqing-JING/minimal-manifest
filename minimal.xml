@@ -36,11 +36,10 @@
   <!-- Clang prebuilts -->
   <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" clone-depth="1"/>
   
-  <project path="packages/modules/adb" name="platform/packages/modules/adb"/>
-  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" clone-depth="1"/>
+
+
   <project path="prebuilts/bazel/common" name="platform/prebuilts/bazel/common" clone-depth="1"/>
 
-  <project path="tools/asuite" name="platform/tools/asuite"/>
   <project path="build/blueprint" name="platform/build/blueprint"/>
   <project path="prebuilts/go/linux-x86" name="platform/prebuilts/go/linux-x86" clone-depth="1"/>
   <project path="external/golang-protobuf" name="platform/external/golang-protobuf"/>
@@ -55,10 +54,7 @@
   <project path="build/release" name="platform/build/release"/>
   <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" clone-depth="1" />
   <project path="external/go-cmp" name="platform/external/go-cmp"/>
-  <project path="system/tools/aidl" name="platform/system/tools/aidl"/>
-
-  <project path="system/apex" name="platform/system/apex"/>
-
-  <project path="system/tools/xsdc" name="platform/system/tools/xsdc"/>
+  
+  <project path="system/linkerconfig" name="platform/system/linkerconfig" groups="pdk" />
 
 </manifest>
